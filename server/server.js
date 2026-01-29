@@ -11,15 +11,15 @@ import { stripeWebhooks } from "./controllers/webhooks.js";
 const app = express();
 await connectDb()
 
-//stripe webhooks
-app.post("/api/stripe", express.raw({type:"application/json"}),stripeWebhooks)
-
 //middlewares
 app.use(cors({
     origin:'*',
     methods:"GET PUT POST DELETE HEAD PATCH"
 }));
 app.use(express.json());
+
+//stripe webhooks
+app.post("/api/stripe", express.raw({type:"application/json"}),stripeWebhooks)
 
 //api endpoints
 app.use("/api/user",userRoutes);
