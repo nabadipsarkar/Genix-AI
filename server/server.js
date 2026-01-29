@@ -6,13 +6,13 @@ import userRoutes from "./routes/userRouter.js";
 import chatRoutes from "./routes/chatRouter.js";
 import messageRoutes from "./routes/messageRouter.js";
 import creaditRoutes from "./routes/creditsRouter.js";
-import { stripeWebhoohs } from "./controllers/webhooks.js";
+import { stripeWebhooks } from "./controllers/webhooks.js";
 
 const app = express();
 await connectDb()
 
 //stripe webhooks
-app.post("/api/stripe", express.raw({type:"application/json"}),stripeWebhoohs)
+app.post("/api/stripe", express.raw({type:"application/json"}),stripeWebhooks)
 
 //middlewares
 app.use(cors({
