@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+
+* {
+  font-family: "Outfit", sans-serif;
+  /* color: white; */
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+.reset-tw :not(pre):not(code){
+  all:revert;
+}

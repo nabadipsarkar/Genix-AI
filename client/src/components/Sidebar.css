@@ -1,0 +1,79 @@
+/* .sidebar-container{
+    width: max(20%, 250px);
+    padding: 25px;
+    backdrop-filter: blur(5px);
+    background: #0e112e7c;
+    border-radius: 4px;
+} */
+.new-chat-btn{
+    padding: 6px 8px;
+    background: linear-gradient(to right, #8077FE, #2C93FD);
+    /* background-color: #2C93FD; */
+    /* #8077FE */
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 30px;
+    font-size: max(1.2vw, 12px);
+    cursor: pointer;
+}
+.search-box{
+    margin-top: 20px;
+    height: 55%;
+    width: 100%;
+}
+.search-input input{
+    outline: none;  
+}
+.search-input{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    padding: 6px 8px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.section{
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    padding: 10px 8px;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.section i{
+    font-size: 24px;
+}
+.recent-chats{
+    height: 45%;
+    overflow-y: scroll;
+}
+.delete{
+    opacity: 0;
+    margin-right: 10px;
+}
+.chats:hover{
+    .delete{
+        opacity: 1;
+    }
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+}
+.logout{
+    margin-right: 10px;
+    opacity: 0;
+}
+.profile:hover{
+    .logout{
+        opacity: 1;
+    }
+}
+.mobile-screen{
+    transform: translateX(-100%);
+}
