@@ -72,7 +72,7 @@ export const purchesPlan = async (req, res) => {
             mode: 'payment',
             success_url: `${origin}`,
             cancel_url:`${origin}`,
-            metadata:{trasactionId:transaction._id.toString(), appId:"Genix-AI"},
+            metadata:{transactionId:transaction._id.toString(), appId:"Genix-AI"},
             expires_at:Math.floor(Date.now()/1000) + 60 * 60
         });
         res.json({success:true, url:session.url})
